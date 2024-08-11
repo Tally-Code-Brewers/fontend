@@ -1,8 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:project_tally/screens/code_editor/page/editor_page.dart';
 import 'package:project_tally/screens/contest/page/contest_page.dart';
 import 'package:project_tally/screens/help/pages/help_page.dart';
 import 'package:project_tally/screens/problem/pages/problem_set.dart';
+
+import '../../authentication/pages/auth_page.dart';
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -17,7 +20,18 @@ class _HomePageState extends State<HomePage> {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: const Text("Home"),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () async {
+              await FirebaseAuth.instance.signOut();
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => const AuthPage()),
+              );
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Column(

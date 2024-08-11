@@ -425,17 +425,23 @@ class _ProblemPageState extends State<ProblemPage>
                         borderRadius: BorderRadius.circular(12),
                         color: Colors.black,
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: CodeTheme(
-                          data: CodeThemeData(styles: monokaiSublimeTheme),
-                          child: CodeField(
-                            controller: _controller,
-                            textStyle: TextStyle(
-                              fontFamily: 'SourceCodePro',
-                              fontSize: 16,
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: CodeTheme(
+                                data: CodeThemeData(styles: monokaiSublimeTheme),
+                                child: CodeField(
+                                  controller: _controller,
+                                  textStyle: TextStyle(
+                                    fontFamily: 'SourceCodePro',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
                             ),
-                          ),
+                          ],
                         ),
                       ),
                     ),

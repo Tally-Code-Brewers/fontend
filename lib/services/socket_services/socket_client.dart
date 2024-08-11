@@ -5,7 +5,7 @@ class SocketClient {
   IO.Socket? socket;
   static SocketClient? _instance;
   SocketClient._internal() {
-    String url=dotenv.env['url']!;
+    String url=dotenv.env['URL']!;
     socket = IO.io(url, <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': false,

@@ -10,7 +10,7 @@ class RunServices{
   Future<CommandMetrics> getToken(BuildContext context,String input,int number,String stdin) async{
     print(input);
     Map<int,String> lang = {62:"java", 92:"python", 54:"cpp"};
-    String url=dotenv.env['url']!;
+    String url=dotenv.env['URL']!;
     log(jsonEncode({
       "code":input,
       "language":lang[number]
