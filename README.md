@@ -58,17 +58,6 @@ To get started with CodeBrawler frontend, ensure you have Flutter installed on y
    - Create a `.env` file in the root directory.
    - Add your Firebase keys and other environment variables.
 
-   Example:
-
-   ```env
-   FIREBASE_API_KEY=your_firebase_api_key
-   AUTH_DOMAIN=your_project_id.firebaseapp.com
-   PROJECT_ID=your_project_id
-   STORAGE_BUCKET=your_project_id.appspot.com
-   MESSAGING_SENDER_ID=your_sender_id
-   APP_ID=your_app_id
-   ```
-
 5. **Run the App:**
 
    ```bash
@@ -101,10 +90,6 @@ lib/
 - **IDE and Compiler**: The integrated IDE allows users to write code, compile, and run it in real-time. Multiple programming languages are supported.
 - **Problem Solving**: Users can browse through problems of different difficulty levels, submit solutions, and get instant feedback.
 - **Contests**: Users can participate in or create coding contests. The platform supports live leaderboards and real-time scoring.
-
-## Screenshots
-
-_Add screenshots of your application here to visually demonstrate the features._
 
 ## Contributing
 
