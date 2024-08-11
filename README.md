@@ -37,8 +37,8 @@ To get started with CodeBrawler frontend, ensure you have Flutter installed on y
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/codebrawler-frontend.git
-   cd codebrawler-frontend
+   git clone https://github.com/Tally-Code-Brewers/fontend
+   cd project-tally
    ```
 
 2. **Install Dependencies:**
